@@ -20,6 +20,7 @@ h1, h2, h3, h4, figure, p, ul {
   --button-filter-color:#F5F4FA;
   --border-color:#ECECEC;
   --border-second-color:#EEEEEE;
+  --background-second-color:#2F303A66;
 }
 
 body {
@@ -83,7 +84,17 @@ font-size: 14px;
   list-style: none;
   display: flex;
   gap: 50px;
-  padding-left: 364px;
+  padding-left: 335px;
+}
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .contact-list a {
@@ -91,9 +102,10 @@ font-size: 14px;
   text-decoration: none;
 }
 
-.contact-list a:hover,
-.contact-list a:focus {
-  color:var(--secondary-color)
+.contact-list :hover,
+.contact-list :focus {
+  color:var(--secondary-color);
+  fill:var(--secondary-color)
 }
 
 .logo {
@@ -115,8 +127,10 @@ font-size: 14px;
 }
 
 .order-wrapper {
-  background-color: var(--background-color);
-  max-width: 1600;
+  background: linear-gradient( var(--background-second-color), var(--background-second-color));
+  background-image: url(/images/background-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .order-wrapper > .container{
@@ -167,11 +181,13 @@ gap: 30px;
   padding: 10px 41px 10px 42px;
 }
 
+
 .paragraph-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
 }
 
 .paragraph-list h3 {
@@ -180,6 +196,7 @@ gap: 30px;
   color: var(--brand-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .paragraph-list p {
