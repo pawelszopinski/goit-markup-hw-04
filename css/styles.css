@@ -337,7 +337,7 @@ gap: 30px;
 .footer-wrapper{
   background-color:var(--background-color);
   padding: 60px 0;
-  display: flex;
+
 }
 
 .footer-nav {
@@ -424,6 +424,12 @@ gap: 30px;
 .site-filter button:focus {
   background-color: var(--secondary-color);
   color: var(--footer-second-color);
+  box-shadow: 1px 4px 6px 0px #00000029;
+
+  box-shadow: 0px 4px 4px 0px #0000000F;
+
+  box-shadow: 0px 1px 1px 0px #0000001F;
+
 }
 
 .img-list-portfolio {
@@ -431,6 +437,13 @@ gap: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.cards-portfolio:hover {
+box-shadow: 1px 4px 6px 0px #00000029;
+
+box-shadow: 0px 4px 4px 0px #0000000F;
+
+box-shadow: 0px 1px 1px 0px #0000001F;
 }
 
 .figcap-border {
