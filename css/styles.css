@@ -130,7 +130,7 @@ font-size: 14px;
 
 .order-wrapper {
   background: linear-gradient( var(--background-second-color), var(--background-second-color));
-  background-image: url(../images/background-img.jpg);
+  background-image: url(./images/background-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
