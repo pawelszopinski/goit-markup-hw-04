@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, figure, p, ul {
+h1,
+h2,
+h3,
+h4,
+figure,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -17,10 +23,11 @@ h1, h2, h3, h4, figure, p, ul {
   --footer-first-color: #ffffff99;
   --footer-second-color: #fff;
   --logo-color: #000;
-  --button-filter-color:#F5F4FA;
-  --border-color:#ECECEC;
-  --border-second-color:#EEEEEE;
-  --background-second-color:#2F303A66;
+  --button-filter-color: #f5f4fa;
+  --border-color: #ececec;
+  --border-second-color: #eeeeee;
+  --background-second-color: #2f303a66;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -66,9 +73,9 @@ body {
   gap: 46px;
 }
 
-.nav-list a{
-    text-decoration: none;
-    color:var(--brand-color);
+.nav-list a {
+  text-decoration: none;
+  color: var(--brand-color);
 }
 
 .nav-list a:hover,
@@ -77,7 +84,7 @@ body {
 }
 
 .contact-list {
-font-size: 14px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
@@ -106,8 +113,8 @@ font-size: 14px;
 
 .contact-list :hover,
 .contact-list :focus {
-  color:var(--secondary-color);
-  fill:var(--secondary-color)
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 .logo {
@@ -129,18 +136,18 @@ font-size: 14px;
 }
 
 .order-wrapper {
-  background: linear-gradient( var(--background-second-color), var(--background-second-color));
+  background: linear-gradient(var(--background-second-color), var(--background-second-color));
   background-image: url(../images/background-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.order-wrapper > .container{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 30px;
+.order-wrapper > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .order-wrapper-header {
@@ -183,13 +190,11 @@ gap: 30px;
   padding: 10px 41px 10px 42px;
 }
 
-
 .paragraph-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   gap: 30px;
-
 }
 
 .paragraph-list h3 {
@@ -230,10 +235,10 @@ gap: 30px;
 }
 
 .content-section-employees {
-  background:  var(--button-filter-color);
+  background: var(--button-filter-color);
 }
 
-.employees-list{
+.employees-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -263,12 +268,11 @@ gap: 30px;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
- 
 }
 .figcap-properties {
   box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024; 
-  box-shadow: 0px 1px 3px 0px #0000001F;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
   border-radius: 0 0 4px 4px;
   background-color: var(--footer-second-color);
   padding-bottom: 30px;
@@ -287,22 +291,14 @@ gap: 30px;
   margin-top: 16px;
   border-radius: 50%;
   background-color: var(--footer-second-color);
-}
-
-.icon-social-media {
-  fill: #afb1b8;
-}
-
-.icon-social-media:hover,
-.icon-social-media:focus {
-  fill: #fff;
-  cursor: pointer;
+  fill: var(--icons-color);
 }
 
 .social-box:hover,
 .social-box:focus {
   cursor: pointer;
   background-color: var(--secondary-color);
+  fill: var(--footer-second-color);
 }
 
 .client-icons {
@@ -314,44 +310,46 @@ gap: 30px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
   margin-right: 30px;
+  fill: var(--icons-color);
 }
-.client-icon-box:last-child{
+
+.client-icon-box:last-child {
   margin-right: 0;
 }
-.client-icon {
-  fill: #AFB1B8;
-}
+
 .client-icon-box:hover,
 .client-icon-box:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--secondary-color);
   cursor: pointer;
+  fill: var(--secondary-color);
 }
-.client-icon:hover,
-.client-icon:focus {
-  fill:#2196f3;
-  cursor: pointer;
-}
-.footer-wrapper{
-  background-color:var(--background-color);
-  padding: 60px 0;
 
+.footer-wrapper {
+  background-color: var(--background-color);
+  padding: 60px 0;
 }
 
 .footer-nav {
   list-style: none;
-  padding: 0 840px 0 15px;
+  display: flex;
 }
 
 .footer-nav-list {
   list-style: none;
 }
 
-.footer-nav-list a{
+.footer-nav-list a {
   margin-top: 9px;
   display: block;
+  text-decoration: none;
+}
+
+.mail-portfolio {
+  text-decoration: underline;
+  color: var(--footer-first-color);
 }
 
 .footer-nav address {
@@ -361,7 +359,7 @@ gap: 30px;
 
 .footer-nav address p {
   color: var(--footer-second-color);
-  margin: 20px 0px 9px 0px;
+  margin: 20px 70px 9px 0px;
   width: fit-content;
 }
 
@@ -381,8 +379,25 @@ gap: 30px;
   color: var(--secondary-color);
 }
 
-.footer-social-box {
+.footer-icons-social-media {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-icon-social-media {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  padding: 12px;
+  display: inline-block;
+}
 
+.footer-icon-social-media:hover,
+.footer-icon-social-media:focus {
+  background-color: var(--secondary-color);
+  fill: var(--footer-second-color);
 }
 
 .footer-social-header {
@@ -391,7 +406,7 @@ gap: 30px;
   color: var(--footer-second-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 72px;
+  margin-bottom: 20px;
 }
 
 .site-filter {
@@ -417,7 +432,7 @@ gap: 30px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: var(--button-filter-color)
+  background-color: var(--button-filter-color);
 }
 
 .site-filter button:hover,
@@ -426,10 +441,9 @@ gap: 30px;
   color: var(--footer-second-color);
   box-shadow: 1px 4px 6px 0px #00000029;
 
-  box-shadow: 0px 4px 4px 0px #0000000F;
+  box-shadow: 0px 4px 4px 0px #0000000f;
 
-  box-shadow: 0px 1px 1px 0px #0000001F;
-
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
 
 .img-list-portfolio {
@@ -438,12 +452,13 @@ gap: 30px;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .cards-portfolio:hover {
-box-shadow: 1px 4px 6px 0px #00000029;
+  box-shadow: 1px 4px 6px 0px #00000029;
 
-box-shadow: 0px 4px 4px 0px #0000000F;
+  box-shadow: 0px 4px 4px 0px #0000000f;
 
-box-shadow: 0px 1px 1px 0px #0000001F;
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
 
 .figcap-border {
