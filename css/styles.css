@@ -109,11 +109,12 @@ body {
 .contact-list a {
   color: var(--third-color);
   text-decoration: none;
+  fill: currentColor;
 }
 
 .contact-list :hover,
 .contact-list :focus {
-  color: var(--secondary-color);
+  color:var(--secondary-color);
   fill: var(--secondary-color);
 }
 
@@ -309,16 +310,17 @@ body {
 .client-icon-box {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
   margin-right: 30px;
-  fill: var(--icons-color);
+  
 }
 .client-icon {
   width: 170px;
   height: 92px;
   display: inline-block;
   padding: 16px 32px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  fill: var(--icons-color);
 }
 
 .client-icon-box:last-child {
@@ -362,7 +364,7 @@ body {
   text-decoration: underline var(--secondary-color);
 }
 
-.tel-portfolio {
+.footer-underline {
   text-decoration: none;
 }
 .footer-nav address {
