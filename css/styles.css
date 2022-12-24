@@ -364,7 +364,7 @@ body {
   text-decoration: underline var(--secondary-color);
 }
 
-.footer-underline {
+.footer-no-underline {
   text-decoration: none;
 }
 .footer-nav address {
